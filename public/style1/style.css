@@ -1,0 +1,381 @@
+@media(min-width:463px) {
+    body {
+        margin: 0;
+    }
+    hgroup {
+        color: red;
+        position: relative;
+        padding-top: 2%;
+    }
+    body .content {
+        width: 75%;
+        margin: auto;
+    }
+    header {
+        background-color: #999999;
+        margin-bottom: 20px;
+    }
+    header div {
+        display: flex;
+        margin: auto;
+        padding-left: 15%;
+    }
+    #about h3, #competencies h3, #experiences h3, #education h3, #hobbies h3 {
+        border-bottom: 1px solid #CCCCCC;
+        padding-bottom: 2px;
+    }
+    section:nth-child(1) h3::before {
+        content: '●';
+        padding-right: 5px;
+        font-size: 1.3rem;
+        position: relative;
+        color: red;
+    }
+    section:nth-child(2) h3::before {
+        content: '●';
+        padding-right: 5px;
+        font-size: 1.3rem;
+        position: relative;
+        color: red;
+    }
+    section:nth-child(3) h3::before {
+        content: '●';
+        padding-right: 5px;
+        font-size: 1.3rem;
+        position: relative;
+        color: red;
+    }
+    section:nth-child(4) h3::before {
+        content: '●';
+        padding-right: 5px;
+        font-size: 1.3rem;
+        position: relative;
+        color: red;
+    }
+    section:nth-child(5) h3::before {
+        content: '●';
+        padding-right: 5px;
+        font-size: 1.3rem;
+        position: relative;
+        color: red;
+    }
+    .content {
+        display: grid;
+        grid-auto-columns: 50% 50%;
+        grid-auto-rows: auto auto;
+        text-align: left;
+    }
+    #about {
+        grid-row: 1;
+        grid-column: 1;
+        justify-content: left;
+    }
+    #competencies {
+        grid-row: 1;
+        grid-column: 2;
+        justify-content: left;
+    }
+    #experiences {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    #education {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    section div {
+        display: inline;
+    }
+    #competencies div {
+        display: block;
+    }
+    #competencies .skills-primary::before {
+        content: 'Main';
+    }
+    #competencies .skills-secondary::before {
+        content: 'Other';
+    }
+    .skills-primary div {
+        display: flex;
+        background-color: #CCCCCC;
+        margin: 3px;
+        height: 40px;
+        color: white;
+        padding: 1px;
+    }
+    .skills-primary div span {
+        line-height: 30px;
+        padding-left: 5px;
+        margin: 5px;
+    }
+    .skills-primary .skill:nth-child(1) span {
+        display: flex;
+        width: 80%;
+        background-color: red;
+    }
+    .skills-primary .skill:nth-child(2) span {
+        display: flex;
+        width: 50%;
+        background-color: red;
+    }
+    .skills-primary .skill:nth-child(3) span {
+        display: flex;
+        width: 20%;
+        background-color: red;
+    }
+    .skills-secondary div {
+        display: flex;
+        background-color: #CCCCCC;
+        margin: 3px;
+        height: 40px;
+        color: white;
+        padding: 1px;
+    }
+    .skills-secondary div span {
+        line-height: 30px;
+        padding-left: 5px;
+        margin: 5px;
+    }
+    .skills-secondary .skill:nth-child(1) span {
+        display: flex;
+        width: 60%;
+        background-color: #FF4B4B;
+    }
+    .skills-secondary .skill:nth-child(2) span {
+        display: flex;
+        width: 40%;
+        background-color: #FF4B4B;
+    }
+    .skills-secondary .skill:nth-child(3) span {
+        display: flex;
+        width: 30%;
+        background-color: #FF4B4B;
+    }
+    .experience-details {
+        display: flex;
+        margin: auto;
+    }
+    .experience-details .experience-location, .experience-details .experience-date {
+        display: flex;
+        margin-top: -20px;
+        color: black;
+        padding-right: 10px;
+    }
+    #contact div {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 50%;
+        height: 120px;
+        line-height: 24px;
+        background-color: black;
+        color: red;
+    }
+    #contact h3 {
+        visibility: hidden;
+    }
+    .contacts dl {
+        display: grid;
+        grid-template-columns: 21% 79%;
+        margin: auto;
+        ;
+        text-align: left;
+        gap: 0;
+    }
+    .contacts dl dt {
+        grid-column: 1;
+        background-color: red;
+        text-align: left;
+        padding-left: 10px;
+        color: black;
+    }
+    .contacts dl dd {
+        grid-column: 2;
+        text-align: left;
+        background-color: black;
+        margin-left: 5px;
+    }
+    a {
+        text-decoration: none;
+        color: red;
+    }
+    h4 {
+        color: red;
+    }
+    .experience .experience-details span {
+        color: #999999;
+    }
+    .experience .experience-details .experience-date-separator {
+        color: red;
+    }
+    .experience .experience-details .experience-location::before {
+        content: ' In ';
+        padding-right: 5px;
+    }
+    .experience .experience-details .experience-location::after {
+        content: ' on ';
+        padding-left: 5px;
+    }
+    .experience .experience-institution::before {
+        content: '@';
+        padding: 0 5px
+    }
+    .experience .experience-institution {
+        font-weight: 400;
+    }
+}
+
+@media (max-width:462px) {
+    body {
+        margin: 0;
+    }
+    body div {
+        width: 97%;
+        margin: auto;
+    }
+    header {
+        background-color: #999999;
+        padding: 20px;
+margin-bottom: 50px;
+    }
+    section h3::before {
+        content: '●';
+        padding-right: 5px;
+        font-size: 1.3rem;
+        position: relative;
+        color: red;
+    }
+    h3 {
+        border-bottom: 1px solid #CCCCCC;
+        padding-bottom: 2px;
+    }
+    #competencies div {
+        display: block;
+    }
+    #competencies .skills-primary::before {
+        content: 'Main';
+    }
+    #competencies .skills-secondary::before {
+        content: 'Other';
+    }
+    .skills-primary div {
+        display: flex;
+        background-color: #CCCCCC;
+        margin: 5px;
+        height: 30px;
+        color: white;
+    }
+    .skills-primary div span {
+        margin: 5px;
+        line-height: 30px;
+        padding-left: 5px;
+    }
+    .skills-primary .skill:nth-child(1) span {
+        display: flex;
+        width: 50%;
+        background-color: red;
+    }
+    .skills-primary .skill:nth-child(2) span {
+        display: flex;
+        width: 30%;
+        background-color: red;
+    }
+    .skills-primary .skill:nth-child(3) span {
+        display: flex;
+        width: 10%;
+        background-color: red;
+    }
+    .skills-secondary div {
+        display: flex;
+        background-color: #CCCCCC;
+        margin: 5px;
+        height: 30px;
+        color: white;
+    }
+    .skills-secondary div span {
+        margin: 5px;
+        line-height: 30px;
+        padding-left: 5px;
+    }
+    .skills-secondary .skill:nth-child(1) span {
+        display: flex;
+        width: 90%;
+        background-color: red;
+    }
+    .skills-secondary .skill:nth-child(2) span {
+        display: flex;
+        width: 50%;
+        background-color: red;
+    }
+    .skills-secondary .skill:nth-child(3) span {
+        display: flex;
+        width: 70%;
+        background-color: red;
+    }
+    .experience-details {
+        display: flex;
+        margin: auto;
+    }
+    .experience-details .experience-location, .experience-details .experience-date {
+        display: flex;
+        margin-top: -20px;
+        color: #999999;
+        padding-right: 10px;
+    }
+    h4 {
+        color: red;
+    }
+    .experience .experience-details span {
+        color: #999999;
+    }
+    .experience .experience-details .experience-date-separator {
+        color: red;
+    }
+    .experience .experience-details .experience-location::before {
+        content: ' In ';
+        padding-right: 5px;
+    }
+    .experience .experience-details .experience-location::after {
+        content: ' on ';
+        padding-left: 5px;
+    }
+    .experience .experience-institution::before {
+        content: '@';
+        padding: 0 5px
+    }
+    .experience .experience-institution {
+        font-weight: 400;
+    }
+    #contact div {
+        width: 100%;
+        line-height: 24px;
+        background-color: white;
+    }
+    .contacts dl {
+        display: grid;
+        grid-template-columns: 31% 69%;
+        margin: 0;
+        text-align: left;
+        gap: 0;
+    }
+    .contacts dl dt {
+        grid-column: 1;
+        background-color: red;
+        text-align: left;
+        padding-left: 3px;
+        color: white;
+    }
+    .contacts dl dd {
+        grid-column: 2;
+        text-align: left;
+        background-color: white;
+        margin-left: 5px;
+    }
+    a {
+        text-decoration: none;
+        color: red;
+    }
+    hgroup {
+        color: red;
+    }
+}

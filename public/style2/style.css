@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+}
+
+body div {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+hgroup {
+    width: 100%;
+}
+
+hgroup h1 {
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+hgroup h2 {
+    display: none;
+}
+
+header figure {
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 25%;
+    position: absolute;
+    right: 0;
+    transform: rotate(-20deg);
+}
+
+figure img {
+    height: 170px;
+}
+
+#about {
+    width: 65%;
+    margin-bottom: 60px;
+    font-style: italic;
+}
+
+#about h3 {
+    display: none;
+}
+
+#about p {
+    color: #c2c2c2;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#competencies {
+    display: grid;
+    height: 120px;
+    grid-template-columns: 135px 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+#competencies h3 {
+    margin: 0;
+    width: 135px;
+    border-right: 1px solid #7f7f7f;
+    grid-row: 1/3;
+}
+
+#competencies .skills-primary {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#competencies .skill {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: #008080;
+}
+
+#competencies .skills-primary [data-skill="5"]:after {
+    content: "\2605\2605\2605\2605\2605";
+}
+
+#competencies .skills-primary [data-skill="3"]:after {
+    content: "\2605\2605\2605\2605";
+}
+
+#competencies .skills-primary [data-skill="1"]:after {
+    content: "\2605\2605";
+}
+
+#competencies .skills-secondary {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+
+#competencies .skills-secondary [data-skill="9"]:after {
+    content: "\2605\2605\2605\2605";
+}
+
+#competencies .skills-secondary [data-skill="5"]:after {
+    content: "\2605\2605\2605";
+}
+
+#competencies .skills-secondary [data-skill="7"]:after {
+    content: "\2605\2605";
+}
+
+#experiences, #education {
+    display: grid;
+    height: 400px;
+    grid-template-columns: 135px 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+#experiences h3, #education h3 {
+    grid-row: 1/3;
+    border-right: 1px solid #7f7f7f;
+}
+
+#experiences h3, h4, p {
+    margin: 0;
+}
+
+#education h3, h4, p {
+    margin: 0;
+}
+
+#experiences h4, #education h4 {
+    color: #008080;
+}
+
+#experiences .experience-institution, #education .experience-institution {
+    display: none;
+}
+
+#experiences .experience, #education .experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 1fr;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+#experiences .experience-description, #education .experience-description {
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+}
+
+#experiences .experience-details, #education .experience-details {
+    justify-self: flex-end;
+    color: #bbbbbb;
+}
+
+#hobbies {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#hobbies h3, #hobbies ul {
+    margin: 0;
+}
+
+#hobbies h3 {
+    width: 135px;
+    height: 100px;
+    border-right: 1px solid #7f7f7f;
+}
+
+#hobbies ul {
+    padding-left: 40px;
+}
+
+#contact {
+    padding-bottom: 20px;
+}
+
+#contact h3 {
+    display: none;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-type {
+    display: none;
+}
+
+.contact-skype {
+    display: none;
+}
+
+.contact-email .contact-value, .contact-phone .contact-value, .contact-github .contact-value, .contact-facebook .contact-value {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.contact-email .contact-value a::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(../images/email.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-phone a::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(../images/phone.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-github a::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(../images/github.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-facebook a::before {
+    content: " ";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(../images/facebook.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    body div {
+        max-width: 550px;
+        margin: auto;
+    }
+    header figure {
+        display: none;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    #competencies, #experiences, #education, #hobbies {
+        height: unset;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    #competencies h3, #experiences h3, #education h3, #hobbies h3 {
+        border-right: none;
+        margin-bottom: 30px;
+    }
+    #competencies .skills-primary, #competencies .skills-secondary {
+        padding-left: 0;
+        margin: 5px 0;
+    }
+    section h3 {
+        border-bottom: 1px solid black;
+        padding-bottom: 2px;
+        width: 135px;
+    }
+    #experiences .experience, #education .experience {
+        padding-left: 0;
+    }
+    #hobbies h3 {
+        height: unset;
+        padding-bottom: 2px;
+    }
+    #contact .contacts {
+        display: unset;
+    }
+    .contacts dl {
+        display: inline-block;
+    }
+    #contact .contact-skype {
+        visibility: hidden;
+    }
+}
